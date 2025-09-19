@@ -3,13 +3,24 @@ import './App.css'
 import ToDo from './todo';
 
 function App() {
-
+  const time = 50;
   return (
     <>
       <h1>React Core Concepts</h1>
-      <ToDo task='Programming Hero Module Watch' isDone={false}></ToDo>
-      <ToDo task='Learn React' isDone={true}></ToDo>
-      <ToDo task='Revise JS' isDone={false}></ToDo>
+      <ToDo 
+        task='Programming Hero Module Watch' 
+        isDone={false} 
+        time={time}>
+      </ToDo>
+      <ToDo 
+        task='Learn React' 
+        isDone={true}>
+      </ToDo>
+      <ToDo 
+        task='Revise JS' 
+        isDone={false} 
+        time="100">
+      </ToDo>
 
       <Student></Student>
       <Student></Student>
