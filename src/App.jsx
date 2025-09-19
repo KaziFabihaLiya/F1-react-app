@@ -1,11 +1,16 @@
 
 import './App.css'
+import ToDo from './todo';
 
 function App() {
 
   return (
     <>
       <h1>React Core Concepts</h1>
+      <ToDo task='Programming Hero Module Watch' isDone={false}></ToDo>
+      <ToDo task='Learn React' isDone={true}></ToDo>
+      <ToDo task='Revise JS' isDone={false}></ToDo>
+
       <Student></Student>
       <Student></Student>
       <Person></Person>
