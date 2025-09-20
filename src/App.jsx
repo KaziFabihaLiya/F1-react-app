@@ -1,13 +1,21 @@
 
 import './App.css'
 import ToDo from './todo';
-
+import Actor from './actor';
+import Singer from './Singer';
 function App() {
-  const time = 50;
+  // const time = 50;
+  //const actor = ['Rajjak', 'Sabiha', 'Nushin', 'Munia', 'Samiha']
+  const singers = 
+  [
+    {id:1, name:'Dr. Mahfuz', age: 68},
+    {id:2, name:'Tahsan', age: 45},
+    {id:3, name:'Shuvro Deb', age: 57}
+  ]
   return (
     <>
       <h1>React Core Concepts</h1>
-      <ToDo 
+      {/* <ToDo 
         task='Programming Hero Module Watch' 
         isDone={false} 
         time={time}>
@@ -20,8 +28,12 @@ function App() {
         task='Revise JS' 
         isDone={false} 
         time="100">
-      </ToDo>
-
+      </ToDo> */}
+      {/* {actor.map(actors => <Actor actor={actors}></Actor> )
+      } */}
+      {
+        singers.map(singer => <Singer singer={singer}></Singer>)
+      }
       <Student></Student>
       <Student></Student>
       <Person></Person>
