@@ -3,6 +3,8 @@ import './App.css'
 import ToDo from './todo';
 import Actor from './actor';
 import Singer from './Singer';
+import Library from './Library'
+import Book from './books';
 function App() {
   // const time = 50;
   //const actor = ['Rajjak', 'Sabiha', 'Nushin', 'Munia', 'Samiha']
@@ -10,11 +12,19 @@ function App() {
   [
     {id:1, name:'Dr. Mahfuz', age: 68},
     {id:2, name:'Tahsan', age: 45},
-    {id:3, name:'Shuvro Deb', age: 57}
+    {id:3, name:'Shuvro Deb', age: 57},
+  ]
+
+  const books = [
+    {id: 1, name: 'Physics', price: 250},
+    {id: 2, name: 'Biology', price: 150},
+    {id: 3, name: 'Math', price: 90},
+    {id: 4, name: 'Chemistry', price: 170},
   ]
   return (
     <>
       <h1>React Core Concepts</h1>
+      <Library books={books} key={books.id}></Library>
       {/* <ToDo 
         task='Programming Hero Module Watch' 
         isDone={false} 
@@ -31,16 +41,16 @@ function App() {
       </ToDo> */}
       {/* {actor.map(actors => <Actor actor={actors}></Actor> )
       } */}
-      {
+      {/* {
         singers.map(singer => <Singer singer={singer}></Singer>)
-      }
-      <Student></Student>
+      } */}
+      {/* <Student></Student>
       <Student></Student>
       <Person></Person>
       <Sports></Sports>
       <Developer name="Liya" tech="JS Stack"></Developer>
       <Developer name="
-      Ahad" tech="MERN Stack"></Developer>
+      Ahad" tech="MERN Stack"></Developer> */}
     </>
   )
 }
